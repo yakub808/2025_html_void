@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'Aux Mono';
+    src: url("fonts/aux_mono.woff") format("woff");
+    }    
+    
+@font-face {
+    font-family: 'Interphases';
+    src: url("fonts/interphases_regular.ttf") format(trutype);
+    }
+
+body {
+    background-color: black;
+}
+
+h1 {
+    font-family:'Aux Mono', monospace;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(219, 199, 18);
+    text-align: left;
+    margin-left: 20px;
+}
+
+h2 {
+    font-family:'Aux Mono', monospace;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(219, 199, 18);
+    text-align: right;
+    margin-right: 20px;
+}
+
+h3 {
+    font-family:'Aux Mono', monospace;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(219, 199, 18);
+    text-align: left;
+    margin-left: 20px;
+}
+
+.p1 {
+    font-family:'Interphases', monospace;
+    font-size: 17px;
+    font-weight: normal;
+    color: rgb(219, 199, 18);
+    text-align: left;
+    margin-left: 20px;
+}
+
+.p2 {
+    font-family:'Interphases', monospace;
+    font-size: 17px;
+    font-weight: normal;
+    color: rgb(219, 199, 18);
+    text-align: right;
+    margin-right: 20px;
+}
+
+.p3 {
+    font-family:'Interphases', monospace;
+    font-size: 16px;
+    font-weight: normal;
+    color: rgb(219, 199, 18);
+    text-align: left;
+    margin-left: 20px;
+}
+
+.link {
+    color:rgb(219, 199, 18);
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.link:hover {
+    color: white;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: black;
+    border-bottom: 1px solid #ccc;
+}
+
+.left {
+    font-size: 16px;
+}
+
+.right a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: rgb(219, 199, 18);
+  font-weight: bold;
+  transition: color 0.2s;
+}
