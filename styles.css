@@ -4,18 +4,8 @@
     }    
     
 @font-face {
-    font-family: 'Interphases';
-    src: url("fonts/interphases_regular.ttf") format("truetype");
-    }
-
-@font-face {
-    font-family: 'InputMono-Regular';
-    src: url("fonts/InputMono-Regular.ttf") format("truetype");
-    }
-
-@font-face {
-    font-family: 'monoMMM_5';
-    src: url("fonts/monoMMM_5.ttf") format("truetype");
+    font-family: 'GeistMono-Regular';
+    src: url("fonts/GeistMono-Regular.ttf") format("truetype");
     }
 
 @media (max-width: 700px) {
@@ -39,8 +29,8 @@
     margin-left: 5px;
     margin-right: 5px;
   }
-  .p1, .p2, .p3 {
-    font-size: 12px;
+  .p1, .p2 {
+    font-size: 16px;
     margin-left: 5px;
     margin-right: 5px;
   }
@@ -61,66 +51,104 @@ video, img {
     display: block;
 }
 
+.entry-video {
+    width: 100%;
+    height: 75vh;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+/* TOP NAVIGATION BAR */
+
+/* POSTION OF NAVIGATION BAR */
+.topnav {
+    overflow: hidden;
+    float: none;
+    padding: 16px 16px;
+    font-size: 16px;
+}
+
+/* STYLE OF NAVIGATION BAR */
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Aux Mono', monospace;
+  font-weight: lighter;
+}
+
+/* STYLE ON HOVER NAVIGATION BAR */
+.topnav a:hover, .topnav a.active:hover {
+    background-color: black;
+    color: rgb(219, 199, 18);
+}
+
+/* STYLE ON ACTIVE NAVIGATION BAR */
+.topnav a.active {
+    background-color: black;
+    color: white;
+}
+
+/* MAIN HEAD FONT */
 h1 {
     font-family:'Aux Mono', monospace;
     font-size: 20px;
-    font-weight: bold;
-    color: rgb(219, 219, 219);
+    font-weight: lighter;
+    color: white;
     text-align: left;
     margin-left: 20px;
 }
 
 h2 {
     font-family:'Aux Mono', monospace;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     color: rgb(219, 219, 219);
-    text-align: left;
-    margin-right: 25px;
+    text-align: center;
+    margin-right: 50px;
 }
 
-h3 {
+h4 {
     font-family:'Aux Mono', monospace;
     font-size: 20px;
-    font-weight: bold;
-    color: rgb(219, 219, 219);
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
     text-align: left;
     margin-left: 20px;
 }
 
+/* MAIN FILLING/CONTENT TEXT */
 .p1 {
-    font-family:'InputMono-Regular', monospace;
-    font-size: 13px;
-    font-weight: normal;
-    color: rgb(219, 219, 219);
-    text-align: left;
-    margin-left: 0px;
-}
-
-.p2 {
-    font-family:'Interphases', monospace;
-    font-size: 13px;
+    font-family:'GeistMono-Regular', monospace;
+    font-size: 14px;
     font-weight: normal;
     color: rgb(219, 219, 219);
     text-align: left;
     margin-left: 20px;
 }
 
-.p3 {
-    font-family:'InputMono-Regular', monospace;
-    font-size: 13px;
+/* BOTTOM BAR TEXT */
+.p2 {
+    font-family:'GeistMono-Regular', monospace;
+    font-size: 14px;
     font-weight: normal;
-    color: rgb(219, 219, 219);
+    color: white;
     text-align: left;
-    margin-left: 0px;
+    margin-left: 14px;
 }
 
+/* LINKS ON PAGE */
 .link {
     color:rgb(219, 219, 219);
     text-decoration: none;
     transition: color 0.2s ease-in-out;
 }
 
+/* LINKS ON HOVER */
 .link:hover {
     color: rgb(219, 199, 18);
 }
@@ -135,18 +163,14 @@ h3 {
 }
 
 .left {
-    font-size: 15px;
+    font-size: 20px;
     margin-left: 0px;
 }
 
-.right a {
-  margin-left: 0px;
-  text-decoration: none;
-  color: rgb(219, 219, 219);
-  font-weight: bold;
-  transition: color 0.2s;
-  text-align: left;
+.right {
+    display: flex;
 }
+
 
 .border {
     border-bottom: 1px solid rgb(82, 82, 82);
@@ -166,4 +190,42 @@ h3 {
 
 .window:hover {
     border-color: rgb(219, 199, 18);
+    box-shadow: 0 18px 50px rgba(219,199,18,0.06);
+}
+
+/* BOTTOM LINKS BAR */
+
+/* POSTION OF BOTTOM BAR */
+.navbar {
+  overflow: hidden;
+  position: right;
+  bottom: 0;
+  width: auto;
+  margin-right: 25px;
+}
+
+/* STYLE OF BOTTOM BAR */
+.navbar a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 16px;
+  margin-right: 5px;
+  margin-bottom: 45px;
+  text-decoration: none;
+  font-size: 14px;
+  gap: 10px;
+}
+
+/* COLOR ON HOVER */
+.navbar a:hover {
+  background-color: black;
+  color: rgb(219, 199, 18);
+}
+
+/* COLOR OF ACTIVE PAGE */
+.navbar a.active {
+  background-color: black;
+  color: rgb(219, 199, 18);
 }
